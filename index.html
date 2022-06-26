@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+   
+
+   <!-- Animate.css link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>'Matcha Meow' cat café</title>
+
+</head>
+
+<body>
+
+   <!-- EMPIEZA HEADER  -->
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="#home" class="logo"><img src="images/logo1.png" alt=""></a>
+
+         <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#menu">Menú</a>
+            <a href="#gallery">Galería</a>
+            <a href="#team">Equipo</a>
+            <a href="#contact">Contacto</a>
+         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <li class="nav-item dropdown">
+            <a class="nav dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="true" aria-haspopup="true">
+                <i class="fas fa-shopping-cart imgCarrito"></i>
+            </a>
+            <ul class="dropdown-menu justify-content-center" aria-labelledby="navbarDropdown" id="carrito">
+                <li>
+                    <table class="table text-center px-3" id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Quitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--Aca se agregan los items desde Js-->
+                        </tbody>
+                    </table>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-center" href="#" id="vaciar-carrito"> Vaciar Carrito </a></li>
+                <li><a class="dropdown-item text-center" href="#" id="pagar" data-toggle="modal"
+                        data-target="#exampleModal"> <i class="fab fa-cc-visa"></i> Pagar </a></li>
+            </ul>
+        </li>
+
+      </section>
+
+   </header>
+
+   <!-- TERMINA HEADER -->
+
+   <!-- SECCION HOME  -->
+
+   <div class="home-bg">
+
+      <section class="home" id="home">
+
+         <div class="content">
+            <h3>'Matcha Meow' cat café</h3>
+            <p class="paf-1">Comparte y jugar con nuestros gatos anfitriones, </p>
+            <p class="paf-2">disfrutando de un exquisito café. Reservá tu lugar!</p>
+            <a href="#about" class="btn">Nosotros</a>
+         </div>
+
+      </section>
+
+   </div>
+
+   <!-- TERMINA SECCION HOME -->
+
+   <!-- SECCION ABOUT  -->
+
+   <section class="about" id="about">
+
+      <div class="image">
+         <img src="images/about-img.svg" class="filter-pink" alt="">
+      </div>
+
+      <div class="content">
+         <h3>Una taza de café para completar tu día</h3>
+         <p>Somos amantes de los gatos y hemos creado un mundo felino para todos los que deseen vivir una experiencia de
+            confort y relajo junto a nuestros “peludos anfitriones”. Nuestros gatitos han sido previamente
+            <strong>chequeados, vacunados y esterilizados</strong> a través de la Fundación Club Gatero y pueden ser
+            adoptados según protocolos establecidos. </p>
+         <a href="#menu" class="btn">Nuestro Menú</a>
+      </div>
+
+   </section>
+
+   <!-- TERMINA SECCION ABOUT -->
+
+   <!-- BREAK  -->
+
+   <section class="facility">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>Nuestra cafetería ofrece...</h3>
+      </div>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/icon-1.png" alt="">
+            <h3>Variedad de café</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         </div>
+
+         <div class="box">
+            <img src="images/icon-2.png" alt="">
+            <h3>Granos de café</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         </div>
+
+         <div class="box">
+            <img src="images/icon-3.png" alt="">
+            <h3>Desayunos y dulces</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         </div>
+
+         <div class="box">
+            <img src="images/icon-4.png" alt="">
+            <h3>Café para llevar!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- TERMINA BREAK  -->
+
+   <!-- SECCION MENU -->
+
+   <section class="menu" id="menu">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>Nuestro Menú</h3>
+      </div>
+
+
+      <!-- Cafes -->
+   <div class="container-fluid my-5 py-5 box-container" id="lista-productos">
+      <div class="row justify-content-around">
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-1.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body box-top">
+               <h4 class="card-title text-justify text-center blanco">Café 'Matcha Meow'</h4>
+   
+               <p class="card-text text-justify blanco">
+                  Café espresso con leche descremada al vapor y toques de vainilla sin azúcar.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>25</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Tapa Arterias" data-id="1">Agregar <i class="fas fa-shopping-basket"></i>
+               </a>
+            </div>
+         </div>
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-2.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body">
+               <h4 class="card-title text-justify text-center blanco">Catppuccino</h4>
+   
+               <p class="card-text text-justify blanco">
+                  Café espresso, leche vaporizada y abundante espuma de leche.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>25</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Wisconsin" data-id="2">Agregar <i class="fas fa-shopping-basket"></i>
+               </a>
+            </div>
+         </div>
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-3.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body">
+               <h4 class="card-title text-justify text-center blanco">Café Mocha</h4>
+   
+               <p class="card-text text-justify blanco">
+                  Chocolate con café espresso y leche al vapor, con crema batida.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>25</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Con Cebollas" data-id="3">Agregar <i class="fas fa-shopping-basket"></i></a>
+   
+            </div>
+         </div>
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-4.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body">
+               <h4 class="card-title text-justify text-center blanco">Frappuccino</h4>
+   
+               <p class="card-text text-justify blanco">
+                  A base de café. Dulce combinación de caramelo, café, leche y hielo.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>30</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Bien Yanki" data-id="4">Agregar <i class="fas fa-shopping-basket"></i></a>
+   
+            </div>
+         </div>
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-5.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body">
+               <h4 class="card-title text-justify text-center blanco">Café negro</h4>
+   
+               <p class="card-text text-justify blanco">
+                  Nuestras mezclas únicas de café en granos preparadas en sistema de filtrado.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>15</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Bacon Burger" data-id="5">Agregar <i class="fas fa-shopping-basket"></i></a>
+   
+            </div>
+         </div>
+         <div class="card col-12 col-md-3 py-4" style="width: 20rem;">
+            <img src="images/menu-6.png" class="card-img-top" alt="Cafe image">
+            <div class="card-body">
+               <h4 class="card-title text-justify text-center blanco">Café especial 'Michi'</h4>
+   
+               <p class="card-text text-justify blanco ">
+                  Café Espresso batido con jarabe de avellana y cubierto con bebida de avena.</p>
+               <p class="precio blanco text-center fs-4"> $ <span>30</span></p>
+               <a href="#" class="mx-4 btn btn-outline-light agregar-carrito" data-toggle="tooltip" data-placement="top"
+                  title="Wisconsin" data-id="6">Agregar <i class="fas fa-shopping-basket"></i></a>
+   
+            </div>
+         </div>
+      </div>
+   </div>
+
+   </section>
+
+   <!-- TERMINA SECCION MENU -->
+
+   <!-- GALERIA  -->
+
+   <section class="gallery" id="gallery">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>Nuestra galería</h3>
+      </div>
+
+      <div class="box-container">
+         <img src="images/newgallery-1.jpg" alt="">
+         <img src="images/newgallery-4.jpg" alt="">
+         <img src="images/newgallery-5.jpg" alt="">
+         <img src="images/newgallery-2.jpg" alt="">
+         <img src="images/newgallery-3.jpg" alt="">
+         <img src="images/newgallery-6.jpg" alt="">
+      </div>
+
+   </section>
+
+   <!-- TERMINA SECCION GALERIA -->
+
+   <!-- SECCION TEAM  -->
+
+   <section class="team" id="team">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>Nuestro equipo gatuno</h3>
+      </div>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/cat-6-martin.jpg" alt="">
+            <h3>Martín</h3>
+            <p class="paf-desc-cat">Tengo 10 meses. Soy un rucio encantador, el Brad Pitt del cat café... me encanta
+               jugar y que me hagan cariño y regaloneos. los espero a todos con las “garras bien afiladas” y les puedo
+               dar unas clases de defensa personal!</p>
+         </div>
+         <div class="box">
+            <img src="images/cat-2-mitty.jpg" alt="">
+            <h3>Mitty</h3>
+            <p class="paf-desc-cat">Tengo 1 año, tranquilo y cariñoso gato persa. Soy el supervisor del Cat Café y desde
+               donde elija recostarme observaré todo lo que pase día a día para informar a la Gerencia.</p>
+         </div>
+         <div class="box">
+            <img src="images/cat-3-mimi.jpg" alt="">
+            <h3>Mimi</h3>
+            <p class="paf-desc-cat">Tengo 2 años. Me gustan los humanos y les pido cariñito haciendo pequeños “toritos”.
+               Estoy ansiosa por conocerlos y encontrar a mi “media naranja” en versión humana para que vivamos juntos
+               para siempre!</p>
+         </div>
+         <div class="box">
+            <img src="images/cat-4-moises.jpg" alt="">
+            <h3>Moises</h3>
+            <p class="paf-desc-cat">Tengo 7 meses gatunos y soy un adolescente ronroneador que le encanta estar en
+               brazos humanos. Me gusta mucho que me hagan cariño en la cabeza y que me acompañen a comer.</p>
+         </div>
+         <div class="box">
+            <img src="images/cat-7-runita.jpg" alt="">
+            <h3>Runita</h3>
+            <p class="paf-desc-cat">Tengo 2 años de edad gatuna. Después de 4 meses de rehabilitación del abandono, ya
+               estoy recuperada y feliz! soy una simpática gatita muy cariñosa y ronroneadora... espero que pronto me
+               vengas a conocer!</p>
+         </div>
+         <div class="box">
+            <img src="images/cat-5-eleonora.jpg" alt="">
+            <h3>Eleonora</h3>
+            <p class="paf-desc-cat">tengo 4 años de edad y soy curiosa por excelencia y muy ronroneadora, me gusta mucho
+               el cariño en mi espalda. Estoy algo flaquita pero en El Mundo de Dalí recuperaré mi peso de diva gatuna.
+            </p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- TERMINA SECCION TEAM -->
+
+   <!-- SECCION CONTACTO  -->
+
+   <section class="contact" id="contact">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>Contactanos</h3>
+      </div>
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/contact-img.svg" class="filter-pink" alt="">
+         </div>
+
+         <form action="" method="post">
+            <h3>Reservá una mesa</h3>
+            <input type="text" name="name" required class="box" maxlength="20" placeholder="Ingresá tu nombre">
+            <input type="number" name="number" required class="box" maxlength="20"
+               placeholder="Ingresá tu número de teléfono" min="0" max="9999999999"
+               onkeypress="if(this.value.length == 10) return false">
+            <input type="number" name="guests" required class="box" maxlength="20" placeholder="¿Cuantas personas?"
+               min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+            <input type="submit" name="send" value="Enviar" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+   <!-- TERMINA SECCION CONTACTO -->
+
+   <!-- SECCION FOOTER  -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Nuestro E-mail</h3>
+            <p>matchameow-catcafe@gmail.com</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Horarios de atención</h3>
+            <p>07:00am to 09:00pm</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Locación</h3>
+            <p>Av. Corrientes 3250 - CABA</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>Teléfono</h3>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+         </div>
+
+      </div>
+
+      <div class="credit"> &copy; copyright @ 2022 by <span>mr. web designer</span>, modified by <span>denise gargiulo</span> | all rights reserved! </div>
+
+   </section>
+
+   <!-- TERMINA SECCION FOOTER -->
+
+
+
+<!--  Sweet Alert 2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<!--  Jquery  -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!--  Bootstrap 5  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!--  App Carrito  -->
+<script src="js/app.js"></script>
+<!-- custom js file link  -->
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>

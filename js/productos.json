@@ -1,0 +1,44 @@
+[
+    {
+        "imagen":"images/menu-1.png",
+        "nombre":"Café 'Matcha Meow'",
+        "description":"Café espresso con leche descremada al vapor y toques de vainilla sin azúcar.",
+        "precio":"25",
+        "id":"1"
+    },
+    {
+        "imagen":"images/menu-2.png",
+        "nombre":"Catppuccino",
+        "description":"Café espresso, leche vaporizada y abundante espuma de leche.",
+        "precio":"25",
+        "id":"2"
+    },
+    {
+        "imagen":"images/menu-3.png",
+        "nombre":"Café Mocha",
+        "description":"Chocolate con café espresso y leche al vapor, con crema batida.",
+        "precio":"25",
+        "id":"3"
+    },
+    {
+        "imagen":"images/menu-4.png",
+        "nombre":"Frappuccino",
+        "description":"A base de café. Dulce combinación de caramelo, café, leche y hielo.",
+        "precio":"30",
+        "id":"4"
+    },
+    {
+        "imagen":"images/menu-5.png",
+        "nombre":"Café negro",
+        "description":"Nuestras mezclas únicas de café en granos preparadas en sistema de filtrado.",
+        "precio":"15",
+        "id":"5"
+    },
+    {
+        "imagen":"images/menu-6.png",
+        "nombre":"Café especial 'Michi'",
+        "description":"Café Espresso batido con jarabe de avellana y cubierto con bebida de avena.",
+        "precio":"30",
+        "id":"6"
+    }
+]
